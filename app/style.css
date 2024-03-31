@@ -93,6 +93,7 @@ button.hamburger--icon {
   left: -5rem;
   background-position: bottom;
   background-size: contain;
+  z-index: -1;
 }
 .hero--wrapper::before {
   content: "";
@@ -124,4 +125,70 @@ button.hamburger--icon {
 .hero--wrapper .left p {
   color: var(--white);
   margin-bottom: 4rem;
+}
+/* Services Section */
+.service--sec {
+  padding-top: 5rem;
+}
+.service__card {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  gap: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.service__card .left,
+.service__card .right {
+  flex: 1;
+}
+.service__card .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.service--card {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+.service--card :where(h2, a) {
+  color: var(--white);
+}
+.service--card a:hover {
+  text-decoration: none;
+}
+.service--card .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  width: 100%;
+}
+.left .service--card .overlay {
+  min-height: 600px;
+}
+.right .service--card .overlay {
+  min-height: 300px;
+}
+.right .service--card {
+  height: 265px;
+}
+.web {
+  background-image: url(./../src/images/image-web-design-large.jpg);
+  min-height: 600px;
+}
+.app {
+  background-image: url(./../src/images/image-app-design.jpg);
+  min-height: 300px;
+}
+.graphic {
+  background-image: url(./../src/images/image-graphic-design.jpg);
+  min-height: 300;
 }
