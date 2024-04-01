@@ -81,7 +81,6 @@ button.hamburger--icon {
   height: 640px;
   position: relative;
 }
-
 .hero--sec::before {
   content: "";
   width: 1050px;
@@ -209,4 +208,34 @@ button.hamburger--icon {
 .graphic {
   background-image: url(./../src/images/image-graphic-design.jpg);
   min-height: 300;
+}
+/* Why Choose us */
+.why--us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+.why--us .why--us_card {
+  flex: 1;
+  flex-direction: column;
+}
+.oval--bg {
+  background-image: url(./../src/icons/bg-pattern-small-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  padding: 3rem 0;
+}
+.why--us_card h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.why--us_card p {
+  line-height: 1.5;
+  font-weight: 400;
 }
