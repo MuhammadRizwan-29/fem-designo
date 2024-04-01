@@ -210,6 +210,26 @@ button.hamburger--icon {
   min-height: 300;
 }
 /* Why Choose us */
+.why--us__sec {
+  padding: 5rem 0;
+  position: relative;
+}
+.why--us__sec::before {
+  content: "";
+  width: 900px;
+  height: 600px;
+  background-image: url(./../src/icons/bg-pattern-leaf.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0;
+  left: unset;
+  top: 10rem;
+  bottom: 0;
+  z-index: -1;
+}
+
 .why--us {
   display: flex;
   align-items: center;
