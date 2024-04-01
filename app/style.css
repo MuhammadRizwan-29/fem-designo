@@ -259,3 +259,45 @@ button.hamburger--icon {
   line-height: 1.5;
   font-weight: 400;
 }
+/* Let's Talk */
+.lets--talk {
+  background-color: var(--peach);
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lets--talk :where(.left, .right) {
+  flex: 1;
+}
+.lets--talk .right {
+  text-align: right;
+}
+.lets--talk :where(h2, p) {
+  color: var(--white);
+}
+.lets--talk h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+.lets--talk p {
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+.lets--talk a {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.025rem;
+}
+.lets--talk a:hover {
+  text-decoration: none;
+}
