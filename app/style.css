@@ -260,6 +260,9 @@ button.hamburger--icon {
   font-weight: 400;
 }
 /* Let's Talk */
+section.lets--talk__sec {
+  z-index: 99999;
+}
 .lets--talk {
   background-color: var(--peach);
   border-radius: 1rem;
@@ -300,4 +303,30 @@ button.hamburger--icon {
 }
 .lets--talk a:hover {
   text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background: var(--black);
+  padding: 5rem 0rem;
+  margin-top: -2rem;
+  z-index: -1;
+}
+.footer--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.footer :where(p, span, a) {
+  color: var(--white);
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer--row:first-child img {
+  width: 15rem;
+  object-fit: cover;
 }
