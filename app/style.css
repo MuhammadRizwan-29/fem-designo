@@ -81,7 +81,8 @@ button.hamburger--icon {
   height: 640px;
   position: relative;
 }
-.hero--sec::before {
+.hero--sec::before,
+.intro--sec::before {
   content: "";
   width: 1050px;
   height: 600px;
@@ -339,17 +340,18 @@ section.lets--talk__sec {
   align-items: center;
   gap: 1rem;
 }
-
+/* Footer */
+/* --------------------------------------------------- */
 /* Our Company Page */
 section.intro--sec {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
 }
 .rounded--card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  border-radius: 2rem;
+  height: 500px;
+  border-radius: 1rem;
   overflow: hidden;
 }
 .rounded--card .text--col {
