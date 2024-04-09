@@ -402,3 +402,43 @@ section.intro--sec {
   color: var(--black);
   margin-bottom: 1rem;
 }
+/* Locations */
+.locations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 4rem 0;
+}
+.locations .location {
+  flex: 1;
+  text-align: center;
+}
+.location .img--col {
+  background-image: url(./../src/icons/bg-pattern-small-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.location .text--col {
+  margin-top: 2.5rem;
+}
+.location .text--col h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+}
+.location .text--col a {
+  background: var(--peach);
+  color: var(--white);
+  padding: 1rem 2rem;
+  position: relative;
+  top: 1.25rem;
+  transition: opacity 1s ease-in-out;
+  border-radius: 0.5rem;
+}
+.location .text--col a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
