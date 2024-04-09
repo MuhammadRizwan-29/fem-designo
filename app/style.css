@@ -261,7 +261,8 @@ button.hamburger--icon {
 }
 /* Let's Talk */
 section.lets--talk__sec {
-  z-index: 99999;
+    position: relative;
+    z-index: 99999;
 }
 .lets--talk {
   background-color: var(--peach);
